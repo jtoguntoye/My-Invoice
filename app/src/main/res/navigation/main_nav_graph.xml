@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.app.presentation.main.ui.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_allInvoiceListHistoryFragment"
+            app:destination="@id/allInvoiceListHistoryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_allClientListFragment"
+            app:destination="@id/allClientListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allInvoiceListHistoryFragment"
+        android:name="com.app.presentation.main.ui.AllInvoiceListHistoryFragment"
+        android:label="AllInvoiceListHistoryFragment" >
+        <action
+            android:id="@+id/action_allInvoiceListHistoryFragment_to_addInvoiceFragment"
+            app:destination="@id/addInvoiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allClientListFragment"
+        android:name="com.app.presentation.main.ui.AllClientListFragment"
+        android:label="AllClientListFragment" >
+        <action
+            android:id="@+id/action_allClientListFragment_to_addClientFragment"
+            app:destination="@id/addClientFragment" />
+        <action
+            android:id="@+id/action_allClientListFragment_to_clientInvoiceListFragment"
+            app:destination="@id/clientInvoiceListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addClientFragment"
+        android:name="com.app.presentation.main.ui.AddClientFragment"
+        android:label="AddClientFragment" >
+        <action
+            android:id="@+id/action_addClientFragment_to_allClientListFragment"
+            app:destination="@id/allClientListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addInvoiceFragment"
+        android:name="com.app.presentation.main.ui.AddInvoiceFragment"
+        android:label="AddInvoiceFragment" >
+        <action
+            android:id="@+id/action_addInvoiceFragment_to_invoiceDetailFragment"
+            app:destination="@id/invoiceDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientInvoiceListFragment"
+        android:name="com.app.presentation.main.ui.ClientInvoiceListFragment"
+        android:label="ClientInvoiceListFragment" >
+        <action
+            android:id="@+id/action_clientInvoiceListFragment_to_addInvoiceFragment"
+            app:destination="@id/addInvoiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/invoiceDetailFragment"
+        android:name="com.app.presentation.main.ui.InvoiceDetailFragment"
+        android:label="InvoiceDetailFragment" >
+        <action
+            android:id="@+id/action_invoiceDetailFragment_to_clientInvoiceListFragment"
+            app:destination="@id/clientInvoiceListFragment" />
+    </fragment>
+</navigation>

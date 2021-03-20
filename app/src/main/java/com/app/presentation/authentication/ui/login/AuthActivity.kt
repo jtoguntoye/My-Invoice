@@ -1,4 +1,4 @@
-package com.app.presentation.authentication
+package com.app.presentation.authentication.ui.login
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
