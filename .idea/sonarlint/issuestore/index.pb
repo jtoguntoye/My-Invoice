@@ -1,10 +1,6 @@
 
-c
-3app/src/main/java/com/app/myinvoice/MainActivity.kt,0\f\0f479c33efa6ac3ce3a5e459980914573f643ee8
 H
 app/google-services.json,f\d\fd8d34b142d02ec743a8efefefd2c097961666e9
-
-Oapp/src/main/java/com/app/presentation/authentication/ui/login/LoginFragment.kt,a\8\a8d583bb0aaa6ec3053378369d77e0315c507826
 ‚
 Rapp/src/main/java/com/app/presentation/authentication/ui/login/RegisterFragment.kt,3\a\3abd78b189182c9a4d187000c86d4ef7cdfff56f
 P
@@ -26,3 +22,23 @@ Y
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 t
 Dapp/src/main/java/com/app/interactors/authentication/SplashScreen.kt,b\6\b64ac1a7a9d1b8affba1724444b7e7013fd835a4
+s
+Capp/src/main/java/com/app/presentation/main/ui/AddClientFragment.kt,b\d\bd075ee975e0914820ed3de536d878007263602d
+t
+Dapp/src/main/java/com/app/presentation/main/ui/AddInvoiceFragment.kt,6\9\69154cfef796055944ac705d86063c6319c467ad
+w
+Gapp/src/main/java/com/app/presentation/main/ui/InvoiceDetailFragment.kt,5\1\51ef1da56f9841fd0159a4a84a403e2718ef5cc6
+{
+Kapp/src/main/java/com/app/presentation/main/ui/ClientInvoiceListFragment.kt,d\8\d84638fe8bd33269b5b14889aa138cff4bd6afbd
+ˆ
+Xapp/src/main/java/com/app/presentation/authentication/ui/login/ForgotPasswordFragment.kt,8\3\8393281f4d61e41984a5ec1897533de2f3eae2fe
+~
+Napp/src/main/java/com/app/presentation/authentication/ui/login/AuthActivity.kt,9\0\908492ea68caf94c67309b589e02ff2bfde3d341
+n
+>app/src/main/java/com/app/presentation/main/ui/MainActivity.kt,6\5\6560470a9acc30e2e47062b7a4d8ebc90b613156
+n
+>app/src/main/java/com/app/presentation/main/ui/HomeFragment.kt,a\d\adf31a13ec9e1ed83d7fe2267991132a0fd49365
+w
+Gapp/src/main/java/com/app/presentation/main/ui/AllClientListFragment.kt,b\0\b09d0ca07e8ef1ec76b5b3c0385ee1b1ea350971
+F
+app/proguard-rules.pro,9\e\9e08934d811afe28fbc77aaa3c0d747b94348db9

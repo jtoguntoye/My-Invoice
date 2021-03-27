@@ -1,6 +1,7 @@
 package com.app.presentation.main.ui
 
 import androidx.fragment.app.Fragment
+import com.app.myinvoice.R
 
-class HomeFragment: Fragment() {
+class HomeFragment: Fragment(R.layout.home_fragment) {
 }
