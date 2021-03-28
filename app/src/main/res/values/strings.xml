@@ -11,5 +11,8 @@
     <string name="login_failed">"Login failed"</string>
     <string name="add_client_fab_content_desc">add new client</string>
     <string name="add_invoice_fab_content_desc">add new client</string>
+    <string name="text_save_Client_button">Save Client/Update</string>
+    <string name="cancel_menu_string">Cancel</string>
+    <string name="text_add_new_invoice_item">Add new item</string>
 
 </resources>
