@@ -7,7 +7,6 @@
 * [Setup](#setup)
 * [Features](#features)
 * [Status](#status)
-* [Contact](#contact)
 
 ## General info
 An android app to help businesses raise invoices for services rendered to clients. Also for automating reminder mails when invoice is due. 
