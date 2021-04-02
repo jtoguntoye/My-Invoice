@@ -2,8 +2,12 @@ package com.app.business.persistence.network
 
 import com.app.business.model.Invoice
 import com.app.framework.persistence.network.InvoiceFireStoreService
+import javax.inject.Inject
+import javax.inject.Singleton
 
+@Singleton
 class InvoiceNetworkDataSourceImpl
+    @Inject
     constructor(
         private val invoiceFireStoreService: InvoiceFireStoreService
     ): InvoiceNetworkDataSource {
