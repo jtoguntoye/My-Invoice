@@ -1,4 +1,4 @@
-package com.app.presentation.main.ui
+package com.app.framework.presentation.main.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

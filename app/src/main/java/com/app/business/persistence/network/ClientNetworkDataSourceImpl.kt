@@ -20,6 +20,6 @@ constructor(private val clientFireStoreService: ClientFireStoreService
     override suspend fun deleteMultipleClients(clients: List<Client>)
      = clientFireStoreService.deleteMultipleClients(clients)
 
-    override suspend fun updateClient(primaryKey: Int, client: Client)
-     = clientFireStoreService.updateClient(primaryKey, client)
+    override suspend fun updateClient(id: String, client: Client)
+     = clientFireStoreService.updateClient(id, client)
 }

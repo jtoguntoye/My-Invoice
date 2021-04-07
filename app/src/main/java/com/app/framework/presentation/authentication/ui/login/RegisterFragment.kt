@@ -1,4 +1,4 @@
-package com.app.presentation.authentication.ui.login
+package com.app.framework.presentation.authentication.ui.login
 
 import androidx.fragment.app.Fragment
 import com.app.myinvoice.R

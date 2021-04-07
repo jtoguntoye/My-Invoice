@@ -5,7 +5,7 @@
 
     <fragment
         android:id="@+id/authHomeFragment"
-        android:name="com.app.presentation.authentication.ui.login.AuthHomeFragment"
+        android:name="com.app.framework.presentation.authentication.ui.login.AuthHomeFragment"
         android:label="AuthHomeFragment" >
         <action
             android:id="@+id/action_authHomeFragment_to_registerFragment"
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.app.presentation.authentication.ui.login.RegisterFragment"
+        android:name="com.app.framework.presentation.authentication.ui.login.RegisterFragment"
         android:label="RegisterFragment" >
         <action
             android:id="@+id/action_registerFragment_to_authHomeFragment"
@@ -24,7 +24,7 @@
     </fragment>
     <fragment
         android:id="@+id/forgotPasswordFragment"
-        android:name="com.app.presentation.authentication.ui.login.ForgotPasswordFragment"
+        android:name="com.app.framework.presentation.authentication.ui.login.ForgotPasswordFragment"
         android:label="ForgotPasswordFragment" >
         <action
             android:id="@+id/action_forgotPasswordFragment_to_authHomeFragment"

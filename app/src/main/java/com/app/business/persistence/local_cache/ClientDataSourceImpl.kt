@@ -10,8 +10,10 @@ class ClientDataSourceImpl
 @Inject
 constructor(private val clientDaoService: ClientDaoService): ClientDataSource {
 
-        override suspend fun insertNewClient(client: Client)
-            =clientDaoService.insertNewClient(client)
+        override suspend fun insertClient(
+                client: Client
+        )
+            =clientDaoService.insertClient(client)
 
         override suspend fun deleteClient(primaryKey: Int)
             =  clientDaoService.deleteClient(primaryKey)
@@ -19,6 +21,7 @@ constructor(private val clientDaoService: ClientDaoService): ClientDataSource {
         override suspend fun deleteMultipleClients(clients: List<Client>)
          = clientDaoService.deleteMultipleClients(clients)
 
-        override suspend fun updateClient(primaryKey: Int, client: Client)
-         = clientDaoService.updateClient(primaryKey, client)
+        override suspend fun updateClient(id: String, client: Client)
+                =clientDaoService.updateClient(id, client)
+
 }
