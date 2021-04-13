@@ -18,6 +18,13 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -26,11 +33,11 @@ android {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
 
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    testOptions{
+        unitTests.all{
+            useJUnitPlatform()
         }
+
     }
 }
 
@@ -76,6 +83,19 @@ dependencies {
     // Kotlin Extensions and Coroutines support for Room
     implementation "androidx.room:room-ktx:$room_version"
 
+    //annotation suppport
     implementation group: 'javax.inject', name: 'javax.inject', version: '1'
 
+
+    //test dependencies
+    def junit_jupiter_version  = "5.6.0"
+    def mockk_version = "1.9.2"
+    def junit_4_version = "4.12"
+    testImplementation "io.mockk:mockk:${mockk_version}"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:${junit_jupiter_version}"
+    testImplementation "org.junit.jupiter:junit-jupiter-params:${junit_jupiter_version}"
+    testImplementation "org.junit.jupiter:junit-jupiter-engine:${junit_jupiter_version}"
+    testImplementation "io.mockk:mockk:${mockk_version}"
+    testImplementation "junit:junit:${junit_4_version}"
+    testRuntimeOnly "org.org.junit.jupiter:junit-jupiter-engine:${junit_jupiter_version}"
 }

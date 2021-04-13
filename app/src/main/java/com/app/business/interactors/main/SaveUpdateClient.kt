@@ -74,7 +74,6 @@ class SaveUpdateClient
 
 
 
-
     private suspend fun updateNetwork(responseMessage: String?, newClient: Client){
         if(responseMessage.equals(INSERT_CLIENT_SUCCESS)) {
             clientNetworkDataSource.insertNewClient(newClient)
