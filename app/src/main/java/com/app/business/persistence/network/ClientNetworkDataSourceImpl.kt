@@ -11,10 +11,10 @@ class ClientNetworkDataSourceImpl
 constructor(private val clientFireStoreService: ClientFireStoreService
     ) : ClientNetworkDataSource {
 
-    override suspend fun insertNewClient(client: Client)
+    override suspend fun insertOrUpdateClient(client: Client)
      = clientFireStoreService.insertNewClient(client)
 
-    override suspend fun deleteClient(primaryKey: Int)
+    override suspend fun deleteClient(primaryKey: String)
      = clientFireStoreService.deleteClient(primaryKey)
 
     override suspend fun deleteMultipleClients(clients: List<Client>)

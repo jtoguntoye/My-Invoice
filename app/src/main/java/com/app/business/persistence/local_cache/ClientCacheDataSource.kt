@@ -1,12 +1,15 @@
-package com.app.framework.persistence.local_cache
+package com.app.business.persistence.local_cache
 
 import com.app.business.model.Client
 
-interface ClientDaoService {
+interface ClientCacheDataSource {
+
+    suspend fun insertOrUpdateClient(client: Client): Long
 
     suspend fun deleteClient(primaryKey: String): Int
 
     suspend fun deleteMultipleClients(clients: List<Client>): Int
 
-    suspend fun insertOrUpdateClient(client: Client): Long
+
+
 }
